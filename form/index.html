@@ -9,8 +9,6 @@
     </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
@@ -62,14 +60,15 @@
       </nav>
     </header>
     <br>
+    <div class="box">
     <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScKm2nh6mCJNOcnFbpkv8-Yi07fhs07EEWcDhN9glGCZu_Wvg/formResponse" method="POST">
       <div class="field">
         <div class="select">
           <label class="label">学年を選択してください</label>
           <select>
-            <option name="entry.762333030" value="1学年">1学年</option>
-            <option name="entry.762333030" value="2学年">2学年</option>
-            <option name="entry.762333030" value="3学年">3学年</option>
+            <option name="entry.762333030" value="1学年" required="required">1学年</option>
+            <option name="entry.762333030" value="2学年" required="required">2学年</option>
+            <option name="entry.762333030" value="3学年" required="required">3学年</option>
           </select>
         </div>
       </div>
@@ -77,13 +76,13 @@
         <div class="select">
           <label class="label">組を選択してください</label>
           <select>
-            <option name="entry.1048793748" value="1組">1組</option>
-            <option name="entry.1048793748" value="2組">2組</option>
-            <option name="entry.1048793748" value="3組">3組</option>
-            <option name="entry.1048793748" value="4組">4組</option>
-            <option name="entry.1048793748" value="5組">5組</option>
-            <option name="entry.1048793748" value="6組">6組</option>
-            <option name="entry.1048793748" value="7組">7組</option>
+            <option name="entry.1048793748" value="1組" required="required">1組</option>
+            <option name="entry.1048793748" value="2組" required="required">2組</option>
+            <option name="entry.1048793748" value="3組" required="required">3組</option>
+            <option name="entry.1048793748" value="4組" required="required">4組</option>
+            <option name="entry.1048793748" value="5組" required="required">5組</option>
+            <option name="entry.1048793748" value="6組" required="required">6組</option>
+            <option name="entry.1048793748" value="7組" required="required">7組</option>
           </select>
         </div>
       </div>
@@ -102,13 +101,14 @@
       <div class="field">
         <label class="label">ご用件を入力してください</label>
         <div class="control">
-          <textarea class="textarea" placeholder="用件" name="entry.192341438"></textarea>
+          <textarea class="textarea" placeholder="用件" name="entry.192341438" required="required"></textarea>
         </div>
       </div>
       <div class="field">
         <div class="control">
           <input type="submit" value="送信" class="button is-link">
         </div>
+      </div>
     </form>
     <footer class="footer">
       <div class="box">
